@@ -36,8 +36,8 @@ export default function AboutPage() {
     <main className="container-px py-12">
       <SectionHeading
         eyebrow="About"
-        title={`Hi, I’m ${site.founder}`}
-        description="I design business automation systems that reduce manual work and scale operations — for serious SMEs, agencies, and operators."
+        title={`Meet the CoreLine Automations team`}
+        description="We design business automation systems that reduce manual work and scale operations — for serious SMEs, agencies, and operators."
       />
 
       <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="card p-6 md:col-span-2">
             <h2 className="text-base font-semibold">What CoreLine Automations does</h2>
             <p className="mt-3 text-sm text-fg-muted">
-              CoreLine Automations is a premium automation & AI systems studio. I help teams remove repetitive work, speed up response
+              CoreLine Automations is a premium automation & AI systems studio. We help teams remove repetitive work, speed up response
               time, and build reliable operations using Make, APIs, and modern tools.
             </p>
             <p className="mt-3 text-sm text-fg-muted">
@@ -71,7 +71,7 @@ export default function AboutPage() {
       <div className="mt-12">
         <SectionHeading
           eyebrow="Method"
-          title="How I work"
+          title="How we work"
           description="A clear process that protects quality and keeps delivery predictable."
         />
 

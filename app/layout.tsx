@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
+import { WhatsAppFloat } from "@/components/WhatsAppFloat"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,14 +29,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }}
           />
           {/* Glow */}
-          <div className="pointer-events-none fixed -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent opacity-[0.10] blur-3xl" />
-          <div className="pointer-events-none fixed top-40 right-[-150px] h-[420px] w-[420px] rounded-full bg-accent-2 opacity-[0.10] blur-3xl" />
+          <div className="pointer-events-none fixed -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-brand opacity-[0.10] blur-3xl" />
+          <div className="pointer-events-none fixed top-40 right-[-150px] h-[420px] w-[420px] rounded-full bg-brand-2 opacity-[0.10] blur-3xl" />
 
           <Navbar />
 
           <div className="relative">
             {children}
           </div>
+
+          <Footer />
+          <WhatsAppFloat />
         </ThemeProvider>
       </body>
     </html>

@@ -32,7 +32,7 @@ export default function ContactPage() {
       <SectionHeading
         eyebrow="Contact"
         title="Book a Strategy Call"
-        description="Serious about removing manual work and scaling operations? Reach out — I’ll respond with next steps and a clear scope path."
+        description="Serious about removing manual work and scaling operations? Reach out — we'll respond with next steps and a clear scope path."
       />
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">

@@ -18,7 +18,7 @@ export default function Home() {
             <div className="md:col-span-7">
               <div className="pill"><Sparkles size={14} /> Premium Automation Studio</div>
               <h1 className="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">
-                I build automation systems that run your business without constant supervision.
+                We build automation systems that run your business without constant supervision.
               </h1>
               <p className="mt-4 max-w-xl text-base text-fg-muted sm:text-lg">
                 AI-powered workflows using Make, APIs, and modern tools — designed for scale. We don&apos;t sell tools — we build systems.
@@ -35,7 +35,7 @@ export default function Home() {
                 </a>
               </div>
               <p className="mt-4 text-sm text-fg-muted">
-                {site.founder} • {site.location}
+                {site.location}
               </p>
             </div>
 

@@ -3,7 +3,7 @@ export const site = {
   founder: 'Okwor Chibuike',
   email: 'okworcm@gmail.com',
   phone: '+15633064305',
-  whatsapp: 'https://wa.me/08113377705',
+  whatsapp: 'https://wa.me/2348113377705',
   calendly: '#',
   location: 'Nigeria • Serving global clients',
   tagline: 'Premium business automation & AI systems studio',
@@ -12,6 +12,8 @@ export const site = {
   social: {
     linkedin: '#',
     github: '#',
-    x: '#',
+    x: 'https://x.com/corelineauto',
+    instagram: 'https://instagram.com/corelineauto',
+    telegram: 'https://t.me/corelineauto',
   },
 }

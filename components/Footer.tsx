@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { site } from '@/lib/site'
+import { SocialLinks } from '@/components/SocialLinks'
 
 export function Footer() {
   return (
@@ -34,12 +35,15 @@ export function Footer() {
       </div>
 
       <div className="border-t border-line py-6">
-        <div className="container-px flex flex-col gap-2 text-xs text-fg-muted md:flex-row md:items-center md:justify-between">
+        <div className="container-px flex flex-col gap-4 text-xs text-fg-muted md:flex-row md:items-center md:justify-between">
           <span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span>
-          <div className="flex gap-4">
-            <Link href="/how-to-add-projects" className="hover:text-fg">Add Projects</Link>
-            <Link href="/toolbox" className="hover:text-fg">Toolbox</Link>
-            <Link href="/journey" className="hover:text-fg">Journey</Link>
+          <div className="flex items-center gap-6">
+            <SocialLinks />
+            <div className="flex gap-4">
+              <Link href="/how-to-add-projects" className="hover:text-fg">Add Projects</Link>
+              <Link href="/toolbox" className="hover:text-fg">Toolbox</Link>
+              <Link href="/journey" className="hover:text-fg">Journey</Link>
+            </div>
           </div>
         </div>
       </div>
