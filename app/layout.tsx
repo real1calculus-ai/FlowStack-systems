@@ -1,45 +1,40 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { ThemeProvider } from '@/components/ThemeProvider'
-import { Navbar } from '@/components/Navbar'
-import { Footer } from '@/components/Footer'
-import { site } from '@/lib/site'
+import "./globals.css"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import { ThemeProvider } from "@/components/ThemeProvider"
+import { Navbar } from "@/components/Navbar"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: {
-    default: `${site.name} — Automation & AI Systems`,
-    template: `%s — ${site.name}`,
-  },
-  description:
-    'Flowstack Systems builds premium automation and AI workflows that replace manual work, increase speed, and scale operations.',
-  metadataBase: new URL('https://flowstack-systems.vercel.app'),
-  openGraph: {
-    title: `${site.name} — Automation & AI Systems`,
-    description:
-      'Premium business automation & AI systems studio. We don’t sell tools — we build systems.',
-    url: 'https://flowstack-systems.vercel.app',
-    siteName: site.name,
-    images: ['/og/cover.svg'],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${site.name} — Automation & AI Systems`,
-    description:
-      'Premium business automation & AI systems studio. We don’t sell tools — we build systems.',
-    images: ['/og/cover.svg'],
-  },
+  title: "CoreLine Automations",
+  description: "Premium automation and AI systems for modern businesses.",
+  metadataBase: new URL("https://coreline-automations.vercel.app"),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={`${inter.className} bg-bg text-fg`}>
         <ThemeProvider>
+          {/* Background grid */}
+          <div
+            className="pointer-events-none fixed inset-0 opacity-[0.25]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px)",
+              backgroundSize: "64px 64px",
+            }}
+          />
+          {/* Glow */}
+          <div className="pointer-events-none fixed -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-accent opacity-[0.10] blur-3xl" />
+          <div className="pointer-events-none fixed top-40 right-[-150px] h-[420px] w-[420px] rounded-full bg-accent-2 opacity-[0.10] blur-3xl" />
+
           <Navbar />
-          <main className="bg-grain">{children}</main>
-          <Footer />
+
+          <div className="relative">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

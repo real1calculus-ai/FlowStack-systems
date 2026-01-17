@@ -1,6 +1,6 @@
-# Flowstack Systems — Portfolio
+# CoreLine Automations — Portfolio
 
-Premium, data-driven portfolio for **Flowstack Systems** (Okwor Chibuike).
+Premium, data-driven portfolio for **CoreLine Automations** (Okwor Chibuike).
 
 ## Run locally
 

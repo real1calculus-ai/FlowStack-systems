@@ -43,9 +43,9 @@ export default function AboutPage() {
       <div className="mt-10 grid gap-8 md:grid-cols-3">
         <FadeIn>
           <div className="card p-6 md:col-span-2">
-            <h2 className="text-base font-semibold">What Flowstack Systems does</h2>
+            <h2 className="text-base font-semibold">What CoreLine Automations does</h2>
             <p className="mt-3 text-sm text-fg-muted">
-              Flowstack Systems is a premium automation & AI systems studio. I help teams remove repetitive work, speed up response
+              CoreLine Automations is a premium automation & AI systems studio. I help teams remove repetitive work, speed up response
               time, and build reliable operations using Make, APIs, and modern tools.
             </p>
             <p className="mt-3 text-sm text-fg-muted">

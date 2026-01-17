@@ -2,7 +2,7 @@ import { projects } from '@/data/projects'
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://flowstack-systems.vercel.app'
+  const baseUrl = 'https://coreline-automations.vercel.app'
 
   const routes: MetadataRoute.Sitemap = [
     '',

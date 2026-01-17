@@ -3,6 +3,6 @@ import type { MetadataRoute } from 'next'
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: '*', allow: '/' }],
-    sitemap: 'https://flowstack-systems.vercel.app/sitemap.xml',
+    sitemap: 'https://coreline-automations.vercel.app/sitemap.xml',
   }
 }
