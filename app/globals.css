@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Premium subtle grain */
+.bg-grain {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark .bg-grain {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+}
+
+/* Smooth focus */
+:focus-visible {
+  outline: 2px solid rgba(99, 102, 241, 0.7);
+  outline-offset: 2px;
+}
+
+@layer base {
+  :root {
+    --bg: 250 250 252;
+    --bg-soft: 245 246 250;
+    --fg: 10 11 15;
+    --fg-muted: 88 92 103;
+    --line: 228 230 236;
+    --brand: 24 92 255;
+    --brand2: 134 239 172;
+  }
+
+  .dark {
+    --bg: 10 11 15;
+    --bg-soft: 16 18 24;
+    --fg: 246 247 250;
+    --fg-muted: 160 166 179;
+    --line: 36 39 49;
+    --brand: 99 102 241;
+    --brand2: 52 211 153;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased;
+  }
+
+  a {
+    @apply text-fg;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply rounded-xl2 border border-line bg-bg-soft/60 shadow-soft backdrop-blur;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-line bg-bg-soft px-3 py-1 text-xs text-fg-muted;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl2 px-4 py-2 text-sm font-medium transition;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand text-white hover:opacity-95;
+  }
+
+  .btn-ghost {
+    @apply btn border border-line bg-transparent hover:bg-bg-soft;
+  }
+}
